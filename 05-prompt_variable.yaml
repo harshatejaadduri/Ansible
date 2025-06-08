@@ -1,4 +1,4 @@
-- name: Variables via Prompt
+- name: variables via prompt
   hosts: Local
   connection: local
   vars_prompt:
@@ -7,9 +7,8 @@
       private: No
 
     - name: PASSWORD
-      prompt: Type Password  
+      prompt: Type Password
       private: Yes
-
   tasks:
-    ansible.builtin.debug:
-      msg: "Your Username is {{ USERNAME }} and Password is {{ PASSWORD }}"
+   ansible.builtin.debug:
+    msg:  "Your Username is {{ USERNAME }} and Password is {{ PASSWORD }}"
