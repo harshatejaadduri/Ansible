@@ -2,6 +2,6 @@
   hosts: Local
   connection: local
   tasks:
-    - name: Printing variables via File
+    - name: Printing variables via inventory
       ansible.builtin.debug:
         msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
