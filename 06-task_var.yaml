@@ -1,0 +1,13 @@
+- name: Task variables
+  hosts: Local
+  connection: local
+  vars:
+    NAME: Harsha
+    COURSE: DevSecOps
+  tasks:
+   - name: Printing variables in tasks
+     ansible.builtin.debug:
+      vars: 
+        NAME: Teja
+        COURSE: DevSecOps
+     msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
