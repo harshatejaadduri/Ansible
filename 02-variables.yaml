@@ -1,9 +1,10 @@
-- name: data types
-  hosts: Local
-  connection: local
-  vars:
-    Name: Harsha
-    Course: DevSecOps
-  tasks:
-   ansible.builtin.debug:
-     msg "My name is {{ Name }} and i'm learning {{ Course }} course"
+  - name: data types
+    hosts: Local
+    connection: local
+    vars:
+      Name: Harsha
+      Course: DevSecOps
+    tasks:
+      - name: Printing Variables
+        ansible.builtin.debug:
+          msg "My name is {{ Name }} and i'm learning {{ Course }} course"
