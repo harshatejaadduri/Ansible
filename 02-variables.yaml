@@ -7,4 +7,4 @@
     tasks:
       - name: Printing Variables
         ansible.builtin.debug:
-          msg "My name is {{ Name }} and i'm learning {{ Course }} course"
+          msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
