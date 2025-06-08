@@ -10,4 +10,4 @@
         NAME: Teja
         COURSE: DevOps
      ansible.builtin.debug:
-      msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
+      msg: "My name is {{ NAME }} and i'm learning {{ COURSE }} course"
