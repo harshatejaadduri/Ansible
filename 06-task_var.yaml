@@ -8,6 +8,6 @@
    - name: Printing variables in tasks
      vars: 
         NAME: Teja
-        COURSE: DevSecOps
+        COURSE: DevOps
      ansible.builtin.debug:
       msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
