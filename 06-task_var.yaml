@@ -6,8 +6,8 @@
     COURSE: DevSecOps
   tasks:
    - name: Printing variables in tasks
-     ansible.builtin.debug:
-      vars: 
+     vars: 
         NAME: Teja
         COURSE: DevSecOps
-     msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
+     ansible.builtin.debug:
+      msg: "My name is {{ Name }} and i'm learning {{ Course }} course"
