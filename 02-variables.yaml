@@ -5,5 +5,5 @@
     Name=Harsha
     Course=DevSecOps
   tasks:
-  ansible.builtin.debug:
-    msg "My name is {{ Name }} and i'm learning {{ Course }} course"
+   ansible.builtin.debug:
+     msg "My name is {{ Name }} and i'm learning {{ Course }} course"
