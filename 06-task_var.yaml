@@ -1,13 +1,18 @@
 - name: Task variables
   hosts: Local
   connection: local
-  vars:
+  vars:               #GLOBAL_VARIABLES
     NAME: Harsha
     COURSE: DevSecOps
-  tasks:
+  tasks:    #HERE TASK IS OVERIDDING NAME AND COURSE
    - name: Printing variables in tasks
      vars: 
         NAME: Teja
         COURSE: DevOps
+     ansible.builtin.debug:
+      msg: "My name is {{ NAME }} and i'm learning {{ COURSE }} course"
+      
+  tasks:    #HERE TASK IS GIVING THE INFO OF GLOBAL VARIABLES
+   - name: Printing variables in tasks
      ansible.builtin.debug:
       msg: "My name is {{ NAME }} and i'm learning {{ COURSE }} course"
