@@ -12,7 +12,7 @@
      ansible.builtin.debug:
       msg: "My name is {{ NAME }} and i'm learning {{ COURSE }} course"
       
-  tasks:    #HERE TASK IS GIVING THE INFO OF GLOBAL VARIABLES
+  #HERE TASK IS GIVING THE INFO OF GLOBAL VARIABLES
    - name: Printing variables in tasks
      ansible.builtin.debug:
       msg: "My name is {{ NAME }} and i'm learning {{ COURSE }} course"
