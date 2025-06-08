@@ -1,7 +1,7 @@
 - name: data types
   hosts: Local
   connection: local
-  vars: 
+  vars:
     Name=Harsha
     Course=DevSecOps
   tasks:
